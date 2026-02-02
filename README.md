@@ -1,6 +1,7 @@
 # TempConv gRPC – Protocol Buffers
 
 This project implements a simple distributed system using **gRPC** and **Protocol Buffers**.
+The service is exposed via gRPC over HTTP/2 on localhost:50051 and can be accessed using a gRPC client.
 
 The service provides two remote procedures:
 - Convert Celsius to Fahrenheit
