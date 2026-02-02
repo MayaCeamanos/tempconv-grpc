@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package tempconv;
+
+
+// Mensaje de entrada con un valor
+message TemperatureRequest {
+  double value = 1;
+}
+
+// Mensaje de salida con el valor convertido
+message TemperatureResponse {
+  double value = 1;
+}
+
+// Definición del servicio
+service TempConv {
+  rpc CelsiusToFahrenheit (TemperatureRequest) returns (TemperatureResponse);
+  rpc FahrenheitToCelsius (TemperatureRequest) returns (TemperatureResponse);
+}
